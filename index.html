@@ -186,7 +186,9 @@
   .footer-inner{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
   .footer-inner p{margin:0;font-size:14px;color:var(--muted)}
   .footer-inner strong{color:var(--text);font-family:"Playfair Display",serif}
-  .yt-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:14px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
+  .yt-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:14px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);cursor:pointer;transition:.18s}
+  .yt-link:hover{border-color:var(--gold);background:var(--gold-soft);color:var(--plum)}
+  @media (prefers-color-scheme: dark){.yt-link:hover{color:#fff}}
   /* Responsive */
   @media (max-width:860px){
     .hero-inner{grid-template-columns:1fr;padding:42px 0 36px}
@@ -435,7 +437,7 @@
 <footer>
   <div class="wrap footer-inner">
     <p><strong>Next Chapter Woman</strong> — a Sprout &amp; Season brand.</p>
-    <a class="yt-link" href="#" onclick="return false;" aria-label="Next Chapter Woman YouTube channel">▶ Watch free videos on the Next Chapter Woman YouTube channel</a>
+    <a class="yt-link" href="https://www.youtube.com/@NextChapterWoman-f6f" target="_blank" rel="noopener noreferrer" aria-label="Watch free videos on the Next Chapter Woman YouTube channel (opens in a new tab)">▶ Watch free videos on the Next Chapter Woman YouTube channel</a>
   </div>
   <div class="wrap" style="margin-top:14px">
     <p style="margin:0;font-size:12.5px;color:var(--muted)">Education and community for women over 40 redesigning the second half of life — health, wealth, purpose and people, one practical step at a time.</p>
