@@ -110,7 +110,7 @@
   .quote-card small{display:block;margin-top:16px;color:var(--gold-2);letter-spacing:.1em;text-transform:uppercase;font-size:11px;font-weight:700;font-family:"Jost",sans-serif;font-style:normal}
   .pain-list{display:grid;gap:12px}
   .pain{display:flex;gap:14px;background:var(--card);border:1px solid var(--card-border);border-radius:14px;padding:16px}
-  .pain-icon{width:42px;height:42px;border-radius:10px;background:#fdf0e6;display:grid;place-items:center;flex:0 0 auto;font-size:20px}
+  .pain-icon{width:56px;height:56px;border-radius:14px;background:#fdf0e6;display:grid;place-items:center;flex:0 0 auto;font-size:30px;line-height:1}
   @media (prefers-color-scheme: dark){.pain-icon{background:#2e1a28}}
   .pain strong{font-size:15px}
   .pain p{margin:3px 0 0;color:var(--muted);font-size:14.5px;line-height:1.5}
@@ -121,7 +121,7 @@
   .hub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
   .hub{background:var(--card);border:1px solid var(--card-border);border-radius:18px;padding:22px}
   .hub-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
-  .hub-icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:24px}
+  .hub-icon{width:64px;height:64px;border-radius:16px;display:grid;place-items:center;font-size:36px;line-height:1}
   .hub h3{font-size:22px;color:var(--plum)}
   @media (prefers-color-scheme: dark){.hub h3{color:#fff}}
   .hub p{color:var(--muted);font-size:15px;line-height:1.6;margin:8px 0 0}
@@ -266,19 +266,19 @@
       </div>
       <div class="pain-list">
         <article class="pain">
-          <div class="pain-icon">🧭</div>
+          <div class="pain-icon" role="img" aria-label="Briefcase — work and career">💼</div>
           <div><strong>Stuck professionally, but not ready to stop</strong><p>You may be in a job that no longer fits, returning after a break, or wondering what work could look like now — with experience as your advantage.</p></div>
         </article>
         <article class="pain">
-          <div class="pain-icon">🌿</div>
+          <div class="pain-icon" role="img" aria-label="Battery — low energy">🔋</div>
           <div><strong>Low on energy, and tired of feeling tired</strong><p>Sleep is patchy, strength feels harder to keep, and you want clear, sensible education — not extremes or quick fixes.</p></div>
         </article>
         <article class="pain">
-          <div class="pain-icon">◐</div>
+          <div class="pain-icon" role="img" aria-label="Piggy bank — savings and retirement money">🐷</div>
           <div><strong>Worried about retirement money</strong><p>You are thinking more about pensions, savings and whether it will be enough — and you want the basics explained without jargon or judgement.</p></div>
         </article>
         <article class="pain">
-          <div class="pain-icon">✦</div>
+          <div class="pain-icon" role="img" aria-label="Sunrise — a new beginning">🌅</div>
           <div><strong>Ready for more — on your terms</strong><p>More confidence, more choice, more connection. Not a reinvention for show, but a second half of life that feels intentional and yours.</p></div>
         </article>
       </div>
@@ -296,25 +296,25 @@
     </div>
     <div class="hub-grid">
       <article class="hub">
-        <div class="hub-top"><div class="hub-icon" style="background:#fdeee6">🌿</div><span class="tag">Health Hub</span></div>
+        <div class="hub-top"><div class="hub-icon" style="background:#fdeee6" role="img" aria-label="Leaf — health and wellbeing">🌿</div><span class="tag">Health Hub</span></div>
         <h3>Health Hub</h3>
         <p>Rebuild energy and strength with grounded, healthy-aging education designed for women over 40.</p>
         <ul><li>Energy, strength and mobility basics</li><li>Sleep routines and recovery</li><li>Healthy-aging education, clearly explained</li></ul>
       </article>
       <article class="hub">
-        <div class="hub-top"><div class="hub-icon" style="background:#fef3c7">◎</div><span class="tag">Wealth Hub</span></div>
+        <div class="hub-top"><div class="hub-icon" style="background:#fef3c7" role="img" aria-label="Money bag — wealth and income">💰</div><span class="tag">Wealth Hub</span></div>
         <h3>Wealth Hub</h3>
         <p>Grow your money confidence — from first income ideas to understanding retirement basics.</p>
         <ul><li>Income ideas suited to this stage of life</li><li>Money confidence and everyday systems</li><li>Retirement basics in plain language</li></ul>
       </article>
       <article class="hub">
-        <div class="hub-top"><div class="hub-icon" style="background:#ede9fe">✦</div><span class="tag">Purpose Hub</span></div>
+        <div class="hub-top"><div class="hub-icon" style="background:#ede9fe" role="img" aria-label="Compass — direction and purpose">🧭</div><span class="tag">Purpose Hub</span></div>
         <h3>Purpose Hub</h3>
         <p>Reconnect with who you are now — and who you want to become next.</p>
         <ul><li>Confidence and identity after 40</li><li>Personal brand and new directions</li><li>Relationships and boundaries</li></ul>
       </article>
       <article class="hub">
-        <div class="hub-top"><div class="hub-icon" style="background:#fce7f3">◯</div><span class="tag">Community Hub</span></div>
+        <div class="hub-top"><div class="hub-icon" style="background:#fce7f3" role="img" aria-label="Two women together — community and friendship">👭</div><span class="tag">Community Hub</span></div>
         <h3>Community Hub</h3>
         <p>Because change is easier — and more enjoyable — with women who get it.</p>
         <ul><li>Accountability circles</li><li>Real friendship at the same stage</li><li>Shared wins, check-ins and encouragement</li></ul>
@@ -378,13 +378,13 @@
     </div>
     <div class="coming-grid">
       <article class="coming">
-        <span class="badge badge-outline">In development</span>
-        <h3 style="margin-top:12px">Maya — your AI next-chapter coach</h3>
-        <p>A supportive AI coach to help you turn the week’s lesson into a small, doable action — and reflect on what is working for you. Designed to sit alongside the hubs and the Letter, not replace real community.</p>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div class="hub-icon" style="background:#ede9fe" role="img" aria-label="Chat bubble — Maya, the #1 Universal Coach">💬</div><span class="badge badge-outline">In development</span></div>
+        <h3 style="margin-top:14px">Maya, the #1 Universal Coach</h3>
+        <p>Meet Maya, the #1 Universal Coach — a supportive AI coach to help you turn the week’s lesson into a small, doable action — and reflect on what is working for you. Designed to sit alongside the hubs and the Letter, not replace real community.</p>
       </article>
       <article class="coming">
-        <span class="badge badge-outline">In development</span>
-        <h3 style="margin-top:12px">Build Online Income After 40 — the Academy course</h3>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div class="hub-icon" style="background:#fef3c7" role="img" aria-label="Laptop — building income online">💻</div><span class="badge badge-outline">In development</span></div>
+        <h3 style="margin-top:14px">Build Online Income After 40 — the Academy course</h3>
         <p>A step-by-step Academy course on building online income after 40, using the skills and experience you already have. Practical, paced for real life, and built for beginners and returners alike.</p>
       </article>
     </div>
